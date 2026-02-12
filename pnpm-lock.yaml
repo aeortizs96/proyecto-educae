@@ -11,6 +11,9 @@ importers:
       vue:
         specifier: ^3.5.25
         version: 3.5.28(typescript@5.9.3)
+      vuetify:
+        specifier: ^3.11.8
+        version: 3.11.8(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3))
     devDependencies:
       '@types/node':
         specifier: ^24.10.1
@@ -537,6 +540,21 @@ packages:
       typescript:
         optional: true
 
+  vuetify@3.11.8:
+    resolution: {integrity: sha512-4iKnntOnLFFklygZjzlVfcHrtLO8+iK4HOhiia6HP2U8v82x+ngaSCgm+epvPrGyCMfCpfuEttqD2qElrr1axw==}
+    peerDependencies:
+      typescript: '>=4.7'
+      vite-plugin-vuetify: '>=2.1.0'
+      vue: ^3.5.0
+      webpack-plugin-vuetify: '>=3.1.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vite-plugin-vuetify:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+
 snapshots:
 
   '@babel/helper-string-parser@7.27.1': {}
@@ -935,5 +953,11 @@ snapshots:
       '@vue/runtime-dom': 3.5.28
       '@vue/server-renderer': 3.5.28(vue@3.5.28(typescript@5.9.3))
       '@vue/shared': 3.5.28
+    optionalDependencies:
+      typescript: 5.9.3
+
+  vuetify@3.11.8(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.28(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
